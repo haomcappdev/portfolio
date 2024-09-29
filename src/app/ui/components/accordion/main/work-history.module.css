@@ -1,0 +1,13 @@
+.accordionItem {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+}
+
+.accordionItem:hover {
+  border-color: #4f46e5;
+}
+
+.control:hover {
+  background-color: transparent;
+}

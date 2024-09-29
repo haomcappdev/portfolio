@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bender",
+    "image": "https://img.icons8.com/clouds/256/000000/futurama-bender.png",
+    "name": "Fascinated with cooking, though has no sense of taste",
+    "detail": {
+      "title": "a",
+      "period": "2019 - 2022",
+      "jobScope": ["comedian", "plumber", "writer"]
+    }
+  },
+  {
+    "id": "carol",
+    "image": "https://img.icons8.com/clouds/256/000000/futurama-mom.png",
+    "name": "One of the richest people on Earth",
+    "detail": {
+      "title": "b",
+      "period": "2023",
+      "jobScope": ["painter"]
+    }
+  },
+  {
+    "id": "homer",
+    "image": "https://img.icons8.com/clouds/256/000000/homer-simpson.png",
+    "name": "Overweight, lazy, and often ignorant",
+    "detail": {
+      "title": "c",
+      "period": "2024 - current",
+      "jobScope": ["dish", "washer"]
+    }
+  }
+]

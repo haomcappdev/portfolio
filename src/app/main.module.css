@@ -1,0 +1,33 @@
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.section1 {
+  background-color: #fbbf24; /* Yellow */
+}
+
+.section2 {
+  background-color: #ef4444; /* Red */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 {
+  background-color: #3b82f6; /* Blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.25rem; /* Equivalent to text-4xl */
+  color: white;
+}

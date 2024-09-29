@@ -1,35 +1,19 @@
-import { Container, Title, Text, Stack, Button } from '@mantine/core';
+import { WorkHistory } from './ui/components/accordion/main/work-history';
+import styles from './main.module.css';
+import jobHistoryList from './data/job-history.json';
 
-const HomePage = () => {
+export default function Home() {
   return (
-    <Container>
-      <Stack mt="xl">
-        <Section
-          title="Introduction"
-          content="Welcome to my website! This is an introduction section."
-        />
-        <Section
-          title="Features"
-          content="Here are some features of our application."
-        />
-        <Section
-          title="About Us"
-          content="Learn more about our team and mission."
-        />
-        <Section title="Contact" content="Get in touch with us." />
-      </Stack>
-    </Container>
+    <div className={styles.container}>
+      <section className={`${styles.section} ${styles.section1}`}>
+        <WorkHistory jobHistoryList={jobHistoryList} />
+      </section>
+      <section className={`${styles.section} ${styles.section2}`}>
+        <h1 className={styles.title}>Section 2</h1>
+      </section>
+      <section className={`${styles.section} ${styles.section3}`}>
+        <h1 className={styles.title}>Section 3</h1>
+      </section>
+    </div>
   );
-};
-
-const Section = ({ title, content }: { title: string; content: string }) => (
-  <div>
-    <Title order={3}>{title}</Title>
-    <Text>{content}</Text>
-    <Button variant="outline" mt="md">
-      Learn More
-    </Button>
-  </div>
-);
-
-export default HomePage;
+}
