@@ -1,6 +1,6 @@
 'use client';
 
-import { Group, Avatar, Text, Accordion, List, Title } from '@mantine/core';
+import { Group, Avatar, Text, Accordion, List } from '@mantine/core';
 
 import styles from './work-history.module.css';
 import { JobDetail, JobHistory } from './types';
@@ -49,7 +49,6 @@ export function WorkHistory(props: { jobHistoryList: JobHistory[] }) {
 
   return (
     <>
-      <Title order={2}>Work experience</Title>
       <Accordion
         className={styles.customAccordion}
         chevronPosition="right"

@@ -1,12 +1,18 @@
 import { WorkHistory } from './ui/components/accordion/main/work-history';
 import styles from './main.module.css';
 import jobHistoryList from './data/job-history.json';
+import { Title } from '@mantine/core';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <section className={`${styles.section} ${styles.section1}`}>
-        <WorkHistory jobHistoryList={jobHistoryList} />
+        <Title className={styles.centeredParagraph} order={2}>
+          Work experience
+        </Title>
+        <div className={styles.content}>
+          <WorkHistory jobHistoryList={jobHistoryList} />
+        </div>
       </section>
       <section className={`${styles.section} ${styles.section2}`}>
         <h1 className={styles.title}>Section 2</h1>
