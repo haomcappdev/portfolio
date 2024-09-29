@@ -1,6 +1,6 @@
 'use client';
 
-import { Group, Avatar, Text, Accordion, List } from '@mantine/core';
+import { Group, Text, Accordion, List } from '@mantine/core';
 
 import styles from './work-history.module.css';
 import { JobDetail, JobHistory } from './types';
@@ -20,10 +20,9 @@ function JobDetails(props: { jobDetail: JobDetail }) {
   );
 }
 
-function JobLabel({ name, image }: JobHistory) {
+function JobLabel({ name }: JobHistory) {
   return (
     <Group wrap="nowrap" className={styles.jobLabel}>
-      <Avatar src={image} radius="xl" size="lg" />
       <div>
         <Text className={styles.jobLabelName}>{name}</Text>
       </div>

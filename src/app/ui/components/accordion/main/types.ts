@@ -1,6 +1,5 @@
 export interface JobHistory {
   id: string;
-  image: string;
   name: string;
   detail: JobDetail;
 }

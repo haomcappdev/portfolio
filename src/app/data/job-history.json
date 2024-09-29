@@ -1,7 +1,6 @@
 [
   {
     "id": "Nintex",
-    "image": "https://img.icons8.com/clouds/256/000000/futurama-bender.png",
     "name": "Nintex",
     "detail": {
       "title": "Associate Software Engineer",
@@ -11,7 +10,6 @@
   },
   {
     "id": "Billennium",
-    "image": "https://img.icons8.com/clouds/256/000000/futurama-mom.png",
     "name": "Billennium",
     "detail": {
       "title": "Fullstack Software Engineer",
@@ -21,7 +19,6 @@
   },
   {
     "id": "PwC Malaysia",
-    "image": "https://img.icons8.com/clouds/256/000000/homer-simpson.png",
     "name": "PwC Malaysia",
     "detail": {
       "title": "Software Engineer (Senior Associate)",
