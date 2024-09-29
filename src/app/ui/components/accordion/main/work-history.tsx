@@ -22,10 +22,10 @@ function JobDetails(props: { jobDetail: JobDetail }) {
 
 function JobLabel({ name, image }: JobHistory) {
   return (
-    <Group wrap="nowrap">
+    <Group wrap="nowrap" className={styles.jobLabel}>
       <Avatar src={image} radius="xl" size="lg" />
       <div>
-        <Text>{name}</Text>
+        <Text className={styles.jobLabelName}>{name}</Text>
       </div>
     </Group>
   );

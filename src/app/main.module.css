@@ -7,7 +7,6 @@
 .section {
   height: 100vh;
   scroll-snap-align: start;
-  text-align: center;
 }
 
 .content {
@@ -18,16 +17,17 @@
   transform: translateY(-50%);
 }
 
-.centeredParagraph {
+.centetedTitle {
   display: block;
   margin: 0 auto;
   position: relative;
   top: 35%;
   transform: translateY(-50%);
+  text-align: center;
 }
 
 .section1 {
-  background-color: #fbbf24;
+  background-color: rgba(20, 20, 20, 1);
 }
 
 .section2 {

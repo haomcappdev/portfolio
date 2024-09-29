@@ -22,7 +22,29 @@ export const metadata: Metadata = {
 };
 
 const theme = createTheme({
-  /** Put your mantine theme override here */
+  components: {
+    Title: {
+      styles: {
+        root: {
+          color: 'rgb(255, 255, 0)',
+        },
+      },
+    },
+    Text: {
+      styles: {
+        root: {
+          color: 'rgb(156 163 175)',
+        },
+      },
+    },
+    List: {
+      styles: {
+        item: {
+          color: 'rgb(156 163 175)',
+        },
+      },
+    },
+  },
 });
 
 export default function RootLayout({
