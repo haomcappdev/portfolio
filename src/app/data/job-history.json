@@ -1,31 +1,31 @@
 [
   {
-    "id": "bender",
+    "id": "Nintex",
     "image": "https://img.icons8.com/clouds/256/000000/futurama-bender.png",
-    "name": "Fascinated with cooking, though has no sense of taste",
+    "name": "Nintex",
     "detail": {
-      "title": "a",
-      "period": "2019 - 2022",
+      "title": "Associate Software Engineer",
+      "period": "Nov 2023 - Present",
       "jobScope": ["comedian", "plumber", "writer"]
     }
   },
   {
-    "id": "carol",
+    "id": "Billennium",
     "image": "https://img.icons8.com/clouds/256/000000/futurama-mom.png",
-    "name": "One of the richest people on Earth",
+    "name": "Billennium",
     "detail": {
-      "title": "b",
-      "period": "2023",
+      "title": "Fullstack Software Engineer",
+      "period": "Aug 2021 - Aug 2023",
       "jobScope": ["painter"]
     }
   },
   {
-    "id": "homer",
+    "id": "PwC Malaysia",
     "image": "https://img.icons8.com/clouds/256/000000/homer-simpson.png",
-    "name": "Overweight, lazy, and often ignorant",
+    "name": "PwC Malaysia",
     "detail": {
-      "title": "c",
-      "period": "2024 - current",
+      "title": "Software Engineer (Senior Associate)",
+      "period": "Dec 2018 - Jul 2021",
       "jobScope": ["dish", "washer"]
     }
   }
