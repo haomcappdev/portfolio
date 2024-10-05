@@ -2,7 +2,12 @@ import '@mantine/core/styles.css';
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { createTheme, MantineProvider, ColorSchemeScript } from '@mantine/core';
+import {
+  createTheme,
+  MantineProvider,
+  ColorSchemeScript,
+  rem,
+} from '@mantine/core';
 import localFont from 'next/font/local';
 
 const geistSans = localFont({
@@ -22,6 +27,31 @@ export const metadata: Metadata = {
 };
 
 const theme = createTheme({
+  headings: {
+    fontFamily: 'Monaco, Courier, monospace',
+    sizes: {
+      h1: {
+        fontSize: rem(36),
+        lineHeight: '1.4',
+      },
+      h2: { fontSize: rem(25), lineHeight: '1.5' },
+    },
+  },
+  fontFamily: 'Monaco, Courier, monospace',
+  fontSizes: {
+    xs: rem(10),
+    sm: rem(11),
+    md: rem(14),
+    lg: rem(16),
+    xl: rem(20),
+  },
+  lineHeights: {
+    xs: '1.4',
+    sm: '1.45',
+    md: '1.55',
+    lg: '1.6',
+    xl: '1.65',
+  },
   components: {
     Title: {
       styles: {

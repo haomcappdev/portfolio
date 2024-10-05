@@ -1,6 +1,6 @@
 'use client';
 
-import { Group, Text, Accordion, List } from '@mantine/core';
+import { Group, Text, Accordion, List, Title } from '@mantine/core';
 
 import styles from './work-history.module.css';
 import { JobDetail, JobHistory } from './types';
@@ -9,11 +9,15 @@ function JobDetails(props: { jobDetail: JobDetail }) {
   const { title, period, jobScope } = { ...props.jobDetail };
   return (
     <div className={styles.jobDetailsContainer}>
-      <Text>{title}</Text>
-      <Text>{period}</Text>
+      <Text fz="md" inherit={true}>
+        {title}
+      </Text>
+      <Text fz="md">{period}</Text>
       <List>
         {jobScope.map((item, index) => (
-          <List.Item key={index}>{item}</List.Item>
+          <List.Item key={index} fz="md">
+            {item}
+          </List.Item>
         ))}
       </List>
     </div>
@@ -23,7 +27,9 @@ function JobDetails(props: { jobDetail: JobDetail }) {
 function JobLabel({ name }: JobHistory) {
   return (
     <Group wrap="nowrap" className={styles.jobLabel}>
-      <Text className={styles.jobLabelName}>{name}</Text>
+      <Title className={styles.jobLabelName} order={2}>
+        {name}
+      </Title>
     </Group>
   );
 }
