@@ -8,7 +8,7 @@ import { JobDetail, JobHistory } from './types';
 function JobDetails(props: { jobDetail: JobDetail }) {
   const { title, period, jobScope } = { ...props.jobDetail };
   return (
-    <>
+    <div className={styles.jobDetailsContainer}>
       <Text>{title}</Text>
       <Text>{period}</Text>
       <List>
@@ -16,16 +16,14 @@ function JobDetails(props: { jobDetail: JobDetail }) {
           <List.Item key={index}>{item}</List.Item>
         ))}
       </List>
-    </>
+    </div>
   );
 }
 
 function JobLabel({ name }: JobHistory) {
   return (
     <Group wrap="nowrap" className={styles.jobLabel}>
-      <div>
-        <Text className={styles.jobLabelName}>{name}</Text>
-      </div>
+      <Text className={styles.jobLabelName}>{name}</Text>
     </Group>
   );
 }
