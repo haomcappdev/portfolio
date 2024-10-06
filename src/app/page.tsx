@@ -1,4 +1,4 @@
-import { WorkHistory } from './ui/components/accordion/main/work-history';
+import { WorkHistory } from './home/work-history';
 import styles from './main.module.css';
 import jobHistoryList from './data/job-history.json';
 import { Title } from '@mantine/core';
