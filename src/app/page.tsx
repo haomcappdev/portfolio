@@ -2,6 +2,14 @@ import { WorkHistory } from './home/work-history/work-history';
 import styles from './main.module.css';
 import jobHistoryList from './data/job-history.json';
 import { Title } from '@mantine/core';
+import { TechStack } from './home/tech-stack/tech-stack';
+
+const data: string[] = [
+  'Java',
+  '.NET',
+  'Angular',
+  'SomeReallyLongTechNameThatIUse',
+];
 
 export default function Home() {
   return (
@@ -15,7 +23,12 @@ export default function Home() {
         </div>
       </section>
       <section className={`${styles.section} ${styles.section2}`}>
-        <h1 className={styles.title}>Section 2</h1>
+        <Title className={styles.centeredTitle} order={1}>
+          Tech stack
+        </Title>
+        <div className={styles.content}>
+          <TechStack tech={data} />
+        </div>
       </section>
       <section className={`${styles.section} ${styles.section3}`}>
         <h1 className={styles.title}>Section 3</h1>
